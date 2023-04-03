@@ -26,7 +26,6 @@ This will create the VPC (and all its other components), I'm using a pre-existin
 SSH into the server and display the required password to unlock Jenkins. You can use this to login to the server.
 Configure your github and aws credentials, create a pipeline, and you are good to go.
 
-
 ## SETTING UP THE EKS CLUSTER AND DEPLOYING THE APPLICATIONS
 
 In the `jenkins-pipeline-to-deploy-to-eks/terraform` folder, there are configurations files to provision the eks cluster.
@@ -43,8 +42,19 @@ kubectl port-forward svc/prometheus-server 8081:9090 -n monitoring --address 0.0
 To access the grafana dashboard, you can use the following command on your jenkins server.
 
 ```bash
-kubectl port-forward svc/grafana 8082:80 -n monitoring --address 0.0.0.0
+kubectl port-forward svc/grafana 8082:80 -n monitoring --address 0.0.0.0 .
+```
 
 ## DEPLOYED APPS
 ![nginx](https://github.com/dubem2/CICD-pipeline-to-deploy-apps-to-EKS-cluster/tree/main/images/nginx.png)
 ![sock-shop](https://github.com/dubem2/CICD-pipeline-to-deploy-apps-to-EKS-cluster/tree/main/images/sock-shop.png)
+
+
+
+
+
+
+
+
+
+
