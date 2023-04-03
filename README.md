@@ -44,3 +44,7 @@ To access the grafana dashboard, you can use the following command on your jenki
 
 ```bash
 kubectl port-forward svc/grafana 8082:80 -n monitoring --address 0.0.0.0
+
+## DEPLOYED APPLICATIONS
+![nginx](https://github.com/dubem2/CICD-pipeline-to-deploy-apps-to-EKS-cluster/main/images/nginx.png)
+![sock-shop](https://github.com/dubem2/CICD-pipeline-to-deploy-apps-to-EKS-cluster/main/images/sock-shop.png)
